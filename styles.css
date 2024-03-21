@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    background-color: #141414;
+    color: white;
+    font-family: 'open-sans', sans-serif;
+}
+
+.header {
+  font-size: 24px;
+}
+
+.searchbox {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100px;
+  margin: auto;
+  padding: 50px;
+}
+
+.searchbox button{
+  background-color: #fc3239;
+  color: white;
+  border-radius: 200px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;  
+  height: 50px;
+  padding: 10px;
+}
+
+.searchbox input{
+  background-color: #d9d9d9;
+  color: black;
+  border-radius: 20px;
+}
+
+.pokemonBox {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemonBox img {
+  max-height: 300px;
+}
+
+.pokemonInfo {
+  margin: 25px;  
+  padding: 50px;
+  box-shadow: 5px 0px 20px 10px rgba(252,50,57,0.5);
+  width: 50%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.stats-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.stats-group p {
+  flex-basis: calc(33.33% - 10px); /* Adjust as needed */
+  margin: 5px;
+}

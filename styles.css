@@ -10,29 +10,26 @@ body {
   font-size: 24px;
 }
 
-.searchbox {
-  display: flex;
-  justify-content: center;
-  height: 50px;
-  width: 100px;
-  margin: auto;
-  padding: 50px;
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgba(252,50,57,0.5);
+  overflow: hidden;
 }
 
-.searchbox button{
-  background-color: #fc3239;
-  color: white;
-  border-radius: 200px;
-  cursor: pointer;
-  transition: all .3s ease-in-out;  
-  height: 50px;
-  padding: 10px;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.searchbox input{
-  background-color: #d9d9d9;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
   color: black;
-  border-radius: 20px;
 }
 
 .pokemonBox {

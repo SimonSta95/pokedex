@@ -4,15 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./index.js" defer></script>
     <title>Pokedex by Simon Staß</title>
 </head>
 <body>
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="list.html">List</a>
-        <a href="detail.html">Detail</a>
-    </div>
-    <h1>Pokedex by Simon Staß</h1>
-    <p>Welcome to my Pokédex Website</p>
+    <main class="main">
+        <header class="header home">
+          <div class="container">
+            <div class="logo-wrapper">
+              <img src="./assets/pokeball.svg" alt="pokeball" />
+              <h1>Pokedex</h1>
+            </div>
+            <div class="search-wrapper">
+              <div class="search-wrap">
+                <span class="material-icons">
+                    search
+                </span>
+                <input
+                  type="text"
+                  class="search-input body3-fonts"
+                  placeholder="Search"
+                  id="search-input"
+                />
+                <span class="material-icons search-close-icon">
+                    close
+                </span>
+              </div>
+              <div class="sort-wrapper">
+                <div class="sort-wrap">
+                    <span class="material-icons">
+                        sort
+                    </span>
+                </div>
+                <div class="filter-wrapper">
+                  <p class="body2-fonts">Sort by:</p>
+                  <div class="filter-wrap">
+                    <div>
+                      <input
+                        type="radio"
+                        id="number"
+                        name="filters"
+                        value="number"
+                        checked
+                      />
+                      <label for="number" class="body3-fonts">Number</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="name" name="filters" value="name" />
+                      <label for="name" class="body3-fonts">Name</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="pokemon-list">
+          <div class="container">
+            <div class="list-wrapper"></div>
+          </div>
+          <div id="not-found-message">Pokemon not found</div>
+        </section>
+      </main>
 </body>
-</html>
+</html

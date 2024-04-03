@@ -4,68 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="./index.js" defer></script>
     <title>Pokedex by Simon Staß</title>
 </head>
 <body>
-    <main class="main">
-        <header class="header home">
-          <div class="container">
-            <div class="logo-wrapper">
-              <img src="./assets/pokeball.svg" alt="pokeball" />
-              <h1>Pokedex</h1>
-            </div>
-            <div class="search-wrapper">
-              <div class="search-wrap">
-                <span class="material-icons">
-                    search
-                </span>
-                <input
-                  type="text"
-                  class="search-input body3-fonts"
-                  placeholder="Search"
-                  id="search-input"
-                />
-                <span class="material-icons search-close-icon">
-                    close
-                </span>
-              </div>
-              <div class="sort-wrapper">
-                <div class="sort-wrap">
-                    <span class="material-icons">
-                        sort
-                    </span>
-                </div>
-                <div class="filter-wrapper">
-                  <p class="body2-fonts">Sort by:</p>
-                  <div class="filter-wrap">
-                    <div>
-                      <input
-                        type="radio"
-                        id="number"
-                        name="filters"
-                        value="number"
-                        checked
-                      />
-                      <label for="number" class="body3-fonts">Number</label>
-                    </div>
-                    <div>
-                      <input type="radio" id="name" name="filters" value="name" />
-                      <label for="name" class="body3-fonts">Name</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <div class="pokedex">
+    <div class="top">
+      <div class="topbar">
+        <input type="text" class="search" placeholder="Pokémon"/>
+        <span class="number"></span>
+      </div>
+      <div class="image-container">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="image" class="image" />
+      </div>
+    </div>
+    <div class="data">
+      <div class="types">
+        <span class="type"></span>
+      </div>
+      <h4 class="base-stats">Base Stats</h4>
+      <div class="stats">
+        <div class="stat-row">
+          <div class="stat-desc">HP</div>
+          <div class="stat-number">045</div>
+          <div class="stat-bar">
+            <div class="bar-outer">
+              <div class="bar-inner"></div>
             </div>
           </div>
-        </header>
-        <section class="pokemon-list">
-          <div class="container">
-            <div class="list-wrapper"></div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-desc">ATK</div>
+          <div class="stat-number">045</div>
+          <div class="stat-bar">
+            <div class="bar-outer">
+              <div class="bar-inner"></div>
+            </div>
           </div>
-          <div id="not-found-message">Pokemon not found</div>
-        </section>
-      </main>
+        </div>
+        <div class="stat-row">
+          <div class="stat-desc">DEF</div>
+          <div class="stat-number">045</div>
+          <div class="stat-bar">
+            <div class="bar-outer">
+              <div class="bar-inner"></div>
+            </div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-desc">SPATK</div>
+          <div class="stat-number">045</div>
+          <div class="stat-bar">
+            <div class="bar-outer">
+              <div class="bar-inner"></div>
+            </div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-desc">SPDEF</div>
+          <div class="stat-number">045</div>
+          <div class="stat-bar">
+            <div class="bar-outer">
+              <div class="bar-inner"></div>
+            </div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-desc">SPD</div>
+          <div class="stat-number">045</div>
+          <div class="stat-bar">
+            <div class="bar-outer">
+              <div class="bar-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-</html
+</html>
